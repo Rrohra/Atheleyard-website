@@ -1,0 +1,87 @@
+/*footer*/
+.social-icon a {
+  width: 40px;
+  height:40px;
+  background: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin: 0 10px;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid white;
+  left:50%;
+  margin-right: 0;
+  margin-top: 0;
+      bottom: 0;
+  }
+
+.social-icon a .fa{
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  } 
+.social-icon a:hover .fa{
+  transform: rotateY(360deg);
+  }
+
+.footer{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black; 
+  position: absolute;
+  right: 0;
+  margin:0; 
+  bottom: 0;
+  left: 0;
+}
+
+.contain{
+
+  max-width: 600px;
+  margin-left: auto;
+  margin-top: -56px;
+      bottom:0;
+}
+.social-icon {
+    max-width: 550px;
+    margin-right: -670px;
+
+}
+
+/*subscribe form*/
+form {
+    font-family: Arial;
+    text-align: left;
+    }
+.con {
+    padding: 1px;  
+    margin-left: 0;
+    width :500px;
+        bottom: 0;
+    }
+#para{
+  color: white;
+    }
+input[type=text], input[type=submit] {
+    width: 300px;
+    padding: 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: left;
+    }
+input[type=submit] {
+    background-color: #A239CA;
+    width:150px;
+     text-align: center;
+    color: white;
+    border: none;
+    }
+
+input[type=submit]:hover {
+    opacity: 0.8;
+    }

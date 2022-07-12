@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="gallery.css">
+<link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="ham1.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+<body>
+
+</div>
+ <div id="nav" class="nav">
+            <a href="javascript:void(0)" id="close" class="close" onclick="closenav()">&times;</a>
+           <a href="category.html">CATEGORY</a>
+            <a href="gallery.html">COMMUNITY</a>
+            <a href="career.html">CAREERS</a>
+            <a href="register_self1.php">MEMBERSHIP</a>
+            <a href="aboutus.html">OUR  STORY</a>
+        </div>
+
+  <div id="navbar">
+      <a href="index.html"><img src="hlogo.png"></a>
+         <div id="open" class="open" onclick="opennav()">&#9776;<br>
+         
+        </div>
+       
+   </div>
+   </div>
+   <div id="content">
+<!-- Header -->
+<div class="header">
+  <h1>GALLERY</h1>
+<!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="hbasket.jpg" style="width:100%">
+    <img src="htennism.jpg" style="width:100%">
+    <img src="runw.jpg" style="width:100%">
+    <img src="party.jpg" style="width:100%">
+    <img src="hmedal.jpg" style="width:100%">
+    <img src="bb.jpg" style="width:100%">
+    <img src="longbasket.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="long1.jpg" style="width:100%">
+    <img src="hceleb.jpg" style="width:100%">
+    <img src="basketball.jpg" style="width:100%">
+    <img src="trophie.jpg" style="width:100%">
+    <img src="basketball1.jpg" style="width:100%">
+    <img src="long1.jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="hbasketw.jpg" style="width:100%">
+    <img src="basketball1.jpg" style="width:100%">
+    <img src="run.jpg" style="width:100%">
+    <img src="court.jpg" style="width:100%">
+    <img src="lprize.jpg" style="width:100%">
+    <img src="runw.jpg" style="width:100%">
+    <img src="party.jpg" style="width:100%">
+  </div>
+
+</div><br><br><br>
+
+<footer class="footer">
+    <div class="con" >
+            <p id="para"> Subscribe  Our Newsletter <b>:-</b></p> 
+            <form method="post" action="subscribe.php">
+            <input type="text" placeholder="Email address" name="email" id="email" required max="50" required="true" style="border-radius: 20px;">
+            <input type="submit"  name="button"  style="border-radius: 20px;">
+            </form>
+          </div>
+    <div class="contain">
+      
+          <div class="social-icon">
+            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-twitter"  aria-hidden="true" ></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+</div>
+
+
+  <script type="text/javascript">
+    function opennav()
+    {
+      document.getElementById('open').style.display="none";
+      document.getElementById('nav').style.width="100%";
+    }
+    function closenav()
+    {
+      document.getElementById('nav').style.width="0";
+      document.getElementById('open').style.display="block";
+    }
+    
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        content.classList.add("sticky1") ;
+      } else {
+        navbar.classList.remove("sticky");
+             content.classList.remove("sticky1") ;
+        
+      }
+      
+    } 
+  </script>
+
+
+  
+
+</body>
+</html>

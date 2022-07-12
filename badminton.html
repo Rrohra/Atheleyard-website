@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="sports.css">
+<link rel="stylesheet" type="text/css" href="ham1.css">
+<link rel="stylesheet" type="text/css" href="finalfooter.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<div id="nav" class="nav">
+            <a href="javascript:void(0)" id="close" class="close" onclick="closenav()">&times;</a>
+            <a href="category.html">CATEGORY</a>
+            <a href="gallery.html">COMMUNITY</a>
+            <a href="career.html">CAREERS</a>
+            <a href="register_self1.php">MEMBERSHIP</a>
+            <a href="aboutus.html">OUR  STORY</a>
+        </div>
+
+	 <div id="navbar">
+  		<a href="index.html"><img src="hlogo.png"></a>
+         <div id="open" class="open" onclick="opennav()">&#9776;<br>
+         
+        </div>
+       
+	 </div>
+
+<div class="split left">
+    <div class="centeredd">
+   
+    <h2><b>BADMINTON</b></h2>
+    <p>Badminton is a perfect combination of violent action taking place in an atmosphere of total tranquility. Enjoy and Learn basic motor skills of control and balancing.   </p>
+<br>
+<br>
+<hr align="left" width=85%>
+<H3>SERVICES : Badminton coching for kids (Not more than 4 children)
+  
+  
+ </H3>
+<H3 CLASS="c">                     Badminton coaching in a group (Not more than 4 people)  
+</h3>
+<H3 CLASS="c">                     Personal badminton Trainer (1 on 1)  
+</H3>
+<hr align="left" width=85%>
+<br>
+<a href="register_self1.php"><button>GET MEMBERSHIP</button></a>
+<br>
+<br>
+<h2> YOUR<h2>
+<h2> INSTRUCTORS:<h2>
+<img src="bad_c.jpg" alt="badminton">
+<h2>RAAMESH H THAKKAR<h2>
+<p>Ramesh H Thakkar is a badminton coach from Mumbai, India. He has played state level badminton as a professional and is now providing badminton training to kids and beginners who want to learn the beautiful game of badminton.</p>
+<br>
+<br>
+<br>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+   <img src="bad_s.jpg" alt="tennis">
+  
+    
+  </div>
+</div>
+ <script type="text/javascript">
+		function opennav()
+		{
+			document.getElementById('open').style.display="none";
+			document.getElementById('nav').style.width="100%";
+		}
+		function closenav()
+		{
+			document.getElementById('nav').style.width="0";
+			document.getElementById('open').style.display="block";
+		}
+		
+		// When the user scrolls the page, execute myFunction
+		window.onscroll = function() {myFunction()};
+
+		// Get the navbar
+		var navbar = document.getElementById("navbar");
+		
+		// Get the offset position of the navbar
+		var sticky = navbar.offsetTop;
+		
+		// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+		function myFunction() {
+		  if (window.pageYOffset >= sticky) {
+		    navbar.classList.add("sticky");
+		    content.classList.add("sticky1") ;
+		  } else {
+		    navbar.classList.remove("sticky");
+             content.classList.remove("sticky1") ;
+		    
+		  }
+		  
+		} 
+	</script>
+    
+    <footer class="footer">
+    <div class="con" >
+            <p id="para"> Subscribe  Our Newsletter <b>:-</b></p> 
+             <form method="post" action="subscribe.php">
+            <input type="text" placeholder="Email address" name="email" id="email" required max="50" required="true" style="border-radius: 20px;">
+            <input type="submit"  name="button" style="border-radius: 20px;" >
+            </form>
+          </div>
+    <div class="contain">
+      
+          <div class="social-icon">
+            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-twitter"  aria-hidden="true" ></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+</body>
+</html>   

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="X-UA=Compatible" content="ie=edge">
+  <title>sports academy</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="ham1.css">
+  <!-- <link rel="stylesheet" type="text/css" href="nav.css"> -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<header class="v-header container">
+
+    <div class="fullscreen-video-wrap">
+       <div id="nav" class="nav">
+            <a href="javascript:void(0)" id="close" class="close" onclick="closenav()">&times;</a>
+            <a href="category.html">CATEGORY</a>
+            <a href="gallery.html">COMMUNITY</a>
+            <a href="career.html">CAREERS</a>
+            <a href="register_self1.php">MEMBERSHIP</a>
+            <a href="aboutus.html">OUR  STORY</a>
+        </div>
+
+   <div id="navbar">
+      <a href="index.html"><img src="hlogo.png"></a>
+         <div id="open" class="open" onclick="opennav()">&#9776;<br>
+         
+        </div>
+       
+   </div>
+      <video src="bg.mp4" autoplay="true" loop="true">
+    </video>
+    </div>
+   
+    <div class="header-overlay"></div>
+    <div class="header-content ">
+      <h1>Welcome Everyone</h1>
+      <p>Sport (British English) or sports (American English) includes all forms of competitive physical activity or games which,[1] through casual or organised participation, aim to use, maintain or improve physical ability and skills while providing enjoyment to participants, and in some cases, entertainment for spectators.[</p>
+      <a href="Takeatour_Trim.mp4" autoplay><button class="btn" type="button">Take a tour!</button></a>
+    </div>
+  </header>
+<body> 
+
+  <section class="section section-a">
+    <div class="container">
+      <h1><b>WHY TO CHOOSE OUR ACADEMY ?</b></h1>
+      <p>Founded in 2013, Fencing Sport Academy aims to create an inclusive environment and a united community to train members of all ages from novice to Olympic levels.<br>
+      All our coaches are Hong Kong Fencing Association (HKFA) certified. In addition to be former elite fencing athletes of the Hong Kong Team, they all possess abundant experience in coaching for many years.<br>
+      All equipment used in our academy are up-to-date and compliant with HKFA CE (EN13567:2002) or equivalent standard. We also established our own code of conduct to ensure all members during trainings are safe.<br>
+      Most importantly, unlike traditional trainings which often focus on sword- fighting techniques, we strive to deploy a cohesive and proactive integrated system approach to prioritize the physical, mental, and body awareness skills of our students. This not only will be of great benefit to their future development but also encourage their pursuit of personal excellence and lifelong discovery.</p>
+    </div>
+  </section>
+
+  <section class="section section-b">
+    <div class="container">
+      <h2>---Athlete Yard Location---</h2>
+      <div class="zoom"><P><img style="text-align: center;width: 538px;height: 334px;" src="Map1.png"></P></div>
+      <p><b>ADDRESS:</b> Near Toyota Showroom, Link Road, Malad West, Mumbai - 400064.</p>
+      <p>info@athleteyard.in</p>
+    </div>
+  </section>
+
+<script type="text/javascript">
+    function opennav()
+    {
+      document.getElementById('open').style.display="none";
+      document.getElementById('nav').style.width="100%";
+    }
+    function closenav()
+    {
+      document.getElementById('nav').style.width="0";
+      document.getElementById('open').style.display="block";
+    }
+    
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the navbar
+    var navbar = document.getElementById("navbar");
+    
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+    
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+        content.classList.add("sticky1") ;
+      } else {
+        navbar.classList.remove("sticky");
+             content.classList.remove("sticky1") ;
+        
+      }
+      
+    } 
+  </script>  
+  
+  
+  <footer class="footer">
+    <div class="con" >
+            <p id="para"> Subscribe  Our Newsletter <b>:-</b></p> 
+            <form method="post" action="subscribe.php">
+            <input type="text" placeholder="Email address" name="email" id="email" required max="50" required="true" style="border-radius: 20px;">
+            <input type="submit"  name="button" style="border-radius: 20px;">
+            </form>
+          </div>
+    <div class="contain">
+      
+          <div class="social-icon">
+            <a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-twitter"  aria-hidden="true" ></i></a>
+            <a href="#"> <i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a href="#"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+          
+          
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  </body>

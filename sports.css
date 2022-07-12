@@ -1,0 +1,89 @@
+
+body {
+    font-family: Arial;
+    color: white;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+.left {
+    left: 0;
+    background-color: black;
+overflow-y: scroll;
+box-sizing: content-box;
+}
+
+.right {
+    right: 0;
+    background-color: black;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centered img {
+   
+height: 774px;    
+ width: 900px;
+}
+
+
+.centeredd {
+    position: absolute;
+    top: 20%;
+    left: 7%;
+  
+
+}
+.centeredd img {
+   
+height: 500px;    
+width: 500px;
+  
+}
+.centeredd h2{
+font-family: helvetica-extended;
+    font-weight: 400;
+    font-size:60px;
+line-height: 24px;
+}
+.centeredd p{
+font-family:  Comic Sans MS;
+font-size: 18px;
+  
+}
+H3.c {
+    white-space: pre;
+}
+
+
+button{
+    background: #A4A71E;
+    color:#000;
+    font-size:1.2rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-left: 28%;
+
+   /* border
+    background-color: #C3073F;
+    margin-left: 35%;*/
+}
+

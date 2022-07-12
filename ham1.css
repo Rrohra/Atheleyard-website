@@ -1,0 +1,107 @@
+body{
+	margin:0;
+	padding: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+
+.wrapper{
+	width: 100%;
+	height:100%;
+	
+	/*background-position:center;
+	background-size:cover;*/
+	position:sticky;
+
+	}
+
+.open{
+	color:white;
+	font-size: 30px;
+	display:block;
+	float:right;
+	margin-top: 11px;
+    margin-right: 40px;
+	cursor:pointer;
+	position:relative;
+	}
+
+.nav{
+	width: 0%;
+	/*font-family: 'Monoton', cursive;*/
+	overflow-x: hidden;
+	z-index: 3;
+	position: fixed;
+	background:black;
+	display:block;
+	text-align: center;
+	transition: 0.4s;
+	height: 100%;
+	}
+
+.nav a{
+	color: #fff;
+	-webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width:1px;
+	font-size: 60px;
+	letter-spacing: 3px;
+	display:block;
+	padding: 1% 0;
+	transition: 0.4s;
+	clear: left;
+	text-decoration: none;
+	}
+
+.close{
+	float: left;
+	margin-top: -42px;
+	padding: 1em 0 0 1em;
+	}
+
+.nav a:not(:first-child):hover{
+	background-color: #A4A71E;
+	}
+	
+#navbar {
+  overflow: hidden;
+  background-color: #000;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  font-size: 30px;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	z-index: 2;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky1{
+	padding-top: 44px;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+ 
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    overflow: auto;
+}
+
+#navbar img {
+	width: 150px;
+	height: 50px;
+	margin-left: 20px;
+} 
